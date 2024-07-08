@@ -1,0 +1,322 @@
+/* Definição do tamanho da fonte base */
+html {
+  font-size: 16px;
+  /* 1rem será igual a 16px */
+}
+
+/* Reset de estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  /* Tamanho base de fonte */
+}
+
+/* Cabeçalho */
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  padding: 1rem;
+  /* Espaçamento interno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 1rem;
+  /* Espaçamento direito menor */
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-info .email {
+  margin-top: 0.5rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 0.5rem;
+  /* Espaçamento menor */
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Conteúdo Principal */
+main {
+  max-width: 1200px;
+  margin: 4rem auto 1rem;
+  /* Margem inferior ajustada */
+  padding: 1rem;
+  /* Espaçamento interno */
+}
+
+section {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+.info-item p {
+  text-align: center;
+}
+
+#servicos {
+  background-color: #f0f0f0;
+}
+
+#servicos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#servicos ul li {
+  text-align: left;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+#servicos ul li:before {
+  content: "●";
+  color: #333;
+  font-size: 0.875rem;
+  /* Tamanho da fonte menor */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Botão do WhatsApp */
+#whatsappButton {
+  position: fixed;
+  bottom: 1rem;
+  /* Espaçamento inferior */
+  right: 1rem;
+  /* Espaçamento à direita */
+  z-index: 1000;
+  background: none;
+  border: none;
+}
+
+#whatsappButton img {
+  width: 4.375rem;
+  /* Tamanho da imagem */
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+/* Formulário de Contato */
+#formulario {
+  background-color: #ffbf00;
+  padding: 1rem;
+  width: 18.75rem;
+  /* Largura fixa em rem */
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  transition: left 0.3s ease-in-out;
+}
+
+#formulario h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  /* Tamanho de fonte maior */
+}
+
+#formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario label {
+  margin-bottom: 0.625rem;
+  /* Espaçamento inferior menor */
+}
+
+#formulario input,
+#formulario textarea {
+  padding: 0.625rem;
+  /* Preenchimento menor */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  /* Raio de borda menor */
+  font-size: 1rem;
+}
+
+#formulario textarea {
+  resize: vertical;
+}
+
+#formulario button {
+  padding: 0.625rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#toggleFormularioInside {
+  position: absolute;
+  top: 0;
+  right: -1.25rem;
+  /* Espaçamento à direita menor */
+  background: #f0f0f0;
+  border: none;
+  z-index: 1001;
+}
+
+#toggleIcon {
+  width: 1rem;
+  /* Tamanho da imagem menor */
+  height: 1rem;
+  /* Tamanho da imagem menor */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Informações Adicionais */
+#informacoes-adicionais {
+  background-color: #f0f0f0;
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+#informacoes-adicionais .info-item {
+  width: 30%;
+  /* Largura fixa em percentual */
+  text-align: left;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+#informacoes-adicionais h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#informacoes-adicionais p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Ícones sobrepostos */
+.info-item {
+  position: relative;
+  text-align: center;
+}
+
+.info-item img {
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+.info-item h2 {
+  margin-bottom: 1rem;
+}
+
+/* Ajuste de posicionamento dos ícones */
+.seguro-info .seguro-icon,
+.especialista-info .especialista-icon,
+.garantia-info .garantia-icon {
+  position: absolute;
+  top: -0.9375rem;
+  /* Posicionamento ajustado */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.5rem;
+  /* Tamanho ajustado */
+  height: auto;
+  z-index: 1;
+}
+
+/* Ajustes específicos para telas menores */
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem;
+    /* Espaçamento interno menor */
+  }
+
+  .contact-info {
+    margin-right: 0.5rem;
+    /* Espaçamento direito menor */
+  }
+
+  nav ul li {
+    margin: 0 0.25rem;
+    /* Espaçamento menor */
+  }
+
+  main {
+    margin: 3rem auto 1rem;
+    /* Margem inferior ajustada */
+  }
+
+  #formulario {
+    width: calc(100% - 2rem);
+    /* Largura responsiva */
+    left: 1rem;
+  }
+
+  #whatsappButton {
+    width: 4rem;
+    /* Tamanho ajustado */
+    height: auto;
+    right: 1rem;
+  }
+}
